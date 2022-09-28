@@ -16,16 +16,5 @@ namespace Lesson11.Models
         public string CompanyCountryName { get; set; }
         public string InEuropeUnion { get; set; }
 
-        /* public ReportItem(string tailNumber, int modelNumber, string modelDescription, 
-           string ownerCompanyName, int companyCountryCode, string companyCountryName)
-        {
-            TailNumber = tailNumber;
-            ModelNumber = modelNumber;
-            ModelDescription = modelDescription;
-            OwnerCompanyName = ownerCompanyName;
-            CompanyCountryCode = companyCountryCode;
-            CompanyCountryName = companyCountryName;
-        }
-    */
     }
 }

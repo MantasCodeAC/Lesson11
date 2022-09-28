@@ -22,20 +22,3 @@ Console.WriteLine("The Aircrafts registred in Europe\n__________________________
 Console.WriteLine("The Aircrafts registred NOT in Europe\n________________________________\n" 
     + htmlGenerator.GenerateHTMLWithColor(y));
 
-
-
-
-
-/*var reportItems = (reportGenerator.GenerateReportAircraftInEurope());
-foreach (var x in reportItems)
-{
-    Console.WriteLine("Aircraft Tail Number: " + x.TailNumber);
-    Console.WriteLine("Aircraft Model Number: " + x.ModelNumber);
-    Console.WriteLine("Aircraft Model Description: " + x.ModelDescription);
-    Console.WriteLine("Owner Company Name: " + x.OwnerCompanyName);
-    Console.WriteLine("Company Country Code: " + x.CompanyCountryCode);
-    Console.WriteLine("Company Country Name: " + x.CompanyCountryName);
-    Console.WriteLine("-----------------------------------------------");
-}
-*/
-
