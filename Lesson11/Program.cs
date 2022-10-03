@@ -17,8 +17,11 @@ var x = reportGenerator.GenerateReportAircraftInEurope();
 var y = reportGenerator.GenerateReportAircraftNotInEurope();
 
 HTMLGenerator htmlGenerator = new HTMLGenerator();
-Console.WriteLine("The Aircrafts registred in Europe\n________________________________\n" 
+/*Console.WriteLine("The Aircrafts registred in Europe\n________________________________\n" 
     + htmlGenerator.GenerateHTMLWithColor(x));
 Console.WriteLine("The Aircrafts registred NOT in Europe\n________________________________\n" 
     + htmlGenerator.GenerateHTMLWithColor(y));
+*/
 
+File.WriteAllText("htmlReport.html","<h2> Lėktuvų registruotų Europoje ataskaita: </h2>" + htmlGenerator.GenerateHTMLWithColor(x));
+File.WriteAllText("htmlReportNotEurope.html", "<h2> Lėktuvų registruotų NE Europoje ataskaita: </h2>" + htmlGenerator.GenerateHTMLWithColor(y));

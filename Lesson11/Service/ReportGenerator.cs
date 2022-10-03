@@ -67,12 +67,12 @@ namespace Lesson11.Service
                 reportItems.Add(reportItem);
                 if (countriesOfEU.Contains(reportItem.CompanyCountryName)) 
                 {
-                    reportItem.InEuropeUnion =  $"{reportItem.CompanyCountryName} is in European Union. Blue";
+                    reportItem.InEuropeUnion = "bgcolor=ADD8E6";
                 }
 
                 else
                 {
-                    reportItem.InEuropeUnion = $"{reportItem.CompanyCountryName} is not in European Union. Red";
+                    reportItem.InEuropeUnion = "bgcolor=FFCCCB";
                 }
             }
             return reportItems;
